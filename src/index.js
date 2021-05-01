@@ -1,4 +1,5 @@
 import './style.css';
+import { Layer } from './Layer/index.js';
 // ----------   3 ---------
 // add event listener to navBtn
 const navElm = document.querySelector('nav');
@@ -20,6 +21,7 @@ for (let i = 0; i < navAllElm.length; i++) {
 }
 
 // -----------   4   -------------
+//Order - changing text content and toggle  drink__cup--selected class
 const orderBtnElm = document.querySelector('.order-btn');
 const drinkCupElm = document.querySelector('.drink__cup');
 let ordered = false;
@@ -37,3 +39,26 @@ const order = () => {
 };
 
 orderBtnElm.addEventListener('click', order);
+
+//  ---------   5 ----------
+//Komponents
+const layerElm = document.querySelector('.drink__info');
+
+const layers = [
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+
+for (let i = 0; i < layers.length; i++) {
+  layerElm.innerHTML += Layer(layers[i]);
+}
