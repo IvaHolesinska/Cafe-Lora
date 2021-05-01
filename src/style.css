@@ -316,3 +316,15 @@ nav a:hover {
     visibility: hidden;
   }
 }
+
+.aboutUs {
+  width: 60%;
+  padding-top: 80px;
+  margin: 0px auto;
+}
+
+.aboutUs--text {
+  padding: 10px 10px;
+  background-color: rgba(68, 68, 68, 0.8);
+  text-align: justify;
+}
