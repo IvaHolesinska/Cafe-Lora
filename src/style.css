@@ -310,3 +310,9 @@ nav a:hover {
     width: 33.333%;
   }
 }
+
+@media (min-width: 768px) {
+  #nav-btn {
+    visibility: hidden;
+  }
+}
